@@ -1,5 +1,6 @@
 
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:order_accepted/order_accepted.dart';
 
 void main(){
@@ -11,9 +12,12 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: OrderAccepted(),
+    return ScreenUtilInit(
+      designSize: Size(360,690),
+      child: MaterialApp(
+          title: 'Flutter Demo',
+          home: const OrderAccepted()
+      ),
     );
   }
 }

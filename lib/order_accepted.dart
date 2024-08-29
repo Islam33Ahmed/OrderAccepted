@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class OrderAccepted extends StatelessWidget {
   const OrderAccepted({super.key});
@@ -13,15 +14,15 @@ class OrderAccepted extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             SizedBox(
-              height: 100,
+              height: 100.h,
             ),
             Image.asset(
               'assets/Image.png',
-              height: 300,
-              width: 350,
+              height: 300.h,
+              width: 350.w,
             ),
             SizedBox(
-              height: 50,
+              height: 50.h,
             ),
             Text(
               'Your Order has been\naccepted',
@@ -32,7 +33,7 @@ class OrderAccepted extends StatelessWidget {
               textAlign: TextAlign.center,
             ),
             SizedBox(
-              height: 9,
+              height: 9.h,
             ),
             Text(
               'Your items has beenPlaced is on\nit`s Way to being Processed',
@@ -42,10 +43,10 @@ class OrderAccepted extends StatelessWidget {
               textAlign: TextAlign.center,
             ),
             SizedBox(
-              height: 190,
+              height: 190.h,
             ),
             Container(
-              width: 300,
+              width: 300.w,
               child: ElevatedButton(
                 onPressed: () {},
                 child: Text(
@@ -60,7 +61,7 @@ class OrderAccepted extends StatelessWidget {
               ),
             ),
             SizedBox(
-              height: 10,
+              height: 10.h,
             ),
             Text(
               'Back to home',
